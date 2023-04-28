@@ -1,0 +1,122 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  background: linear-gradient(rgb(47, 150, 163), rgb(48, 62, 143));
+  color: white;
+  font-family: sans-serif;
+}
+
+.header {
+  margin-top: 3rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.header span {
+  text-align: center;
+}
+
+form {
+  display: flex;
+}
+
+#city {
+  margin: 5px auto;
+  text-align: center;
+  padding: 5px 50px;
+  border: none;
+  border-top-left-radius: 3px;
+  border-bottom-left-radius: 3px;
+  background: white;
+  /* border: 1px solid grey; */
+}
+
+input:focus {
+  outline: none;
+  color: rgb(50, 50, 50);
+  text-emphasis: bold;
+}
+
+#search-button {
+  text-align: center;
+  padding: 3px 8px;
+  background-color: white;
+  border: none;
+  margin: 5px auto;
+  border-top-right-radius: 3px;
+  border-bottom-right-radius: 3px;
+}
+
+#device-location {
+  background: rgb(47, 150, 163, 0.7);
+  border: none;
+  border-radius: 3px;
+  padding: 5px 50px;
+  color: white;
+  margin-top: 5px;
+  cursor: pointer;
+}
+
+.hide {
+  display: none;
+}
+
+.location {
+  height: 30vh;
+  width: 50%;
+  display: none;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.temperature {
+  height: 30vh;
+  width: 50%;
+  display: none;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+}
+
+.degree-container {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  gap: 10px;
+}
+
+.degree-container span {
+  font-size: 40px;
+}
+
+.degree-container h2 {
+  font-size: 40px;
+}
+
+#error,
+#error-location {
+  color: yellow;
+  font-size: small;
+  text-align: left;
+  margin-top: 0.2rem;
+}
+
+@media screen and (max-width: 768px) {
+  input[type="text"] {
+    font-size: 16px;
+  }
+
+  #search-button,
+  #device-location {
+    font-size: 16px;
+  }
+}
